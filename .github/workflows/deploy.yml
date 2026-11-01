@@ -25,7 +25,12 @@ jobs:
         with:
           node-version: 22
 
-      - uses: actions/configure-pages@v5
+      
+- name: Setup Pages
+  uses: actions/configure-pages@v5
+  with:
+    enablement: true
+    
 
       - name: Extract project
         run: unzip -q MangaVerse-source.zip -d source
